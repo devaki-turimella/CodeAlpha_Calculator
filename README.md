@@ -34,7 +34,7 @@ The calculator includes:
 - ✖ Multiplication
 - ➗ Division
 - % Percentage
-- ⌫ Backspace
+- Backspace
 - AC Clear
 - Decimal calculations
 - ⌨️ Keyboard support
