@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>WispCalc ✦</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Caveat:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================
+         WISP DOODLE BACKGROUND
+    ====================================== -->
+
+    <div class="doodles">
+
+        <!-- Floating Wisps -->
+        <span class="doodle ghost ghost1">👻</span>
+        <span class="doodle ghost ghost2">👻</span>
+        <span class="doodle ghost ghost3">👻</span>
+        <span class="doodle ghost ghost4">👻</span>
+
+
+        <!-- Stars -->
+        <span class="doodle star star1">✦</span>
+        <span class="doodle star star2">✧</span>
+        <span class="doodle star star3">✦</span>
+        <span class="doodle star star4">☆</span>
+        <span class="doodle star star5">✧</span>
+
+
+        <!-- Moons -->
+        <span class="doodle moon moon1">☾</span>
+        <span class="doodle moon moon2">☽</span>
+
+
+        <!-- Mathematical Doodles -->
+        <span class="doodle math math1">+</span>
+        <span class="doodle math math2">÷</span>
+        <span class="doodle math math3">×</span>
+        <span class="doodle math math4">=</span>
+        <span class="doodle math math5">∞</span>
+        <span class="doodle math math6">π</span>
+
+
+        <!-- Equations -->
+        <span class="doodle equation equation1">
+            x² + y²
+        </span>
+
+        <span class="doodle equation equation2">
+            √x
+        </span>
+
+        <span class="doodle equation equation3">
+            3.14...
+        </span>
+
+        <span class="doodle equation equation4">
+            a² + b² = c²
+        </span>
+
+
+        <!-- Magical Doodles -->
+        <span class="doodle spooky spooky1">♡</span>
+        <span class="doodle spooky spooky2">☁</span>
+        <span class="doodle spooky spooky3">~ ~ ~</span>
+        <span class="doodle spooky spooky4">☁</span>
+
+
+        <!-- Arrows -->
+        <span class="doodle arrow arrow1">↝</span>
+        <span class="doodle arrow arrow2">→</span>
+
+
+        <!-- Sparkles -->
+        <span class="doodle sparkle sparkle1">⋆</span>
+        <span class="doodle sparkle sparkle2">˚</span>
+        <span class="doodle sparkle sparkle3">✩</span>
+
+
+        <!-- Wisp Notes -->
+        <span class="doodle tiny tiny1">
+            wisp ✦
+        </span>
+
+        <span class="doodle tiny tiny2">
+            magic...
+        </span>
+
+        <span class="doodle tiny tiny3">
+            wisp math
+        </span>
+
+    </div>
+
+
+
+    <!-- =====================================
+         MAIN CONTENT
+    ====================================== -->
+
+    <main class="container">
+
+
+        <!-- =================================
+             WISPCALC BRANDING
+        ================================== -->
+
+        <div class="heading">
+
+
+            <!-- Wisp Logo -->
+
+            <div class="ghost-logo">
+
+                <div class="mini-ghost">
+
+                    <div class="mini-eyes">
+
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+
+                    <div class="mini-mouth">
+                        ˘
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Title -->
+
+            <h1>
+                Wisp<span>Calc</span>
+            </h1>
+
+
+
+            <!-- Subtitle -->
+
+            <p>
+                A little magic in every calculation ✨
+            </p>
+
+
+        </div>
+
+
+
+        <!-- =================================
+             CALCULATOR
+        ================================== -->
+
+        <section class="calculator">
+
+
+            <!-- Calculator Header -->
+
+            <div class="calculator-header">
+
+
+                <div class="calculator-title">
+
+                    <span class="dot"></span>
+
+                    <span>
+                        WISP MODE
+                    </span>
+
+                </div>
+
+
+
+                <!-- Theme Button -->
+
+                <button
+                    id="themeBtn"
+                    class="theme-btn"
+                    aria-label="Toggle theme">
+
+                    ☾
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =================================
+                 DISPLAY
+            ================================== -->
+
+            <div class="display">
+
+
+                <div
+                    id="previousDisplay"
+                    class="previous-display">
+                </div>
+
+
+
+                <div
+                    id="currentDisplay"
+                    class="current-display">
+
+                    0
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================
+                 CALCULATOR BUTTONS
+            ================================== -->
+
+            <div class="buttons">
+
+
+                <!-- Row 1 -->
+
+                <button
+                    class="btn utility"
+                    data-action="clear">
+
+                    AC
+
+                </button>
+
+
+                <button
+                    class="btn utility"
+                    data-action="backspace">
+
+                    ⌫
+
+                </button>
+
+
+                <button
+                    class="btn utility"
+                    data-action="percentage">
+
+                    %
+
+                </button>
+
+
+                <button
+                    class="btn operator"
+                    data-operation="÷">
+
+                    ÷
+
+                </button>
+
+
+
+                <!-- Row 2 -->
+
+                <button class="btn number">
+                    7
+                </button>
+
+                <button class="btn number">
+                    8
+                </button>
+
+                <button class="btn number">
+                    9
+                </button>
+
+                <button
+                    class="btn operator"
+                    data-operation="×">
+
+                    ×
+
+                </button>
+
+
+
+                <!-- Row 3 -->
+
+                <button class="btn number">
+                    4
+                </button>
+
+                <button class="btn number">
+                    5
+                </button>
+
+                <button class="btn number">
+                    6
+                </button>
+
+                <button
+                    class="btn operator"
+                    data-operation="−">
+
+                    −
+
+                </button>
+
+
+
+                <!-- Row 4 -->
+
+                <button class="btn number">
+                    1
+                </button>
+
+                <button class="btn number">
+                    2
+                </button>
+
+                <button class="btn number">
+                    3
+                </button>
+
+                <button
+                    class="btn operator"
+                    data-operation="+">
+
+                    +
+
+                </button>
+
+
+
+                <!-- Row 5 -->
+
+                <button
+                    class="btn number zero">
+
+                    0
+
+                </button>
+
+
+                <button class="btn number">
+
+                    .
+
+                </button>
+
+
+                <button
+                    class="btn equals"
+                    data-action="calculate">
+
+                    =
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =================================
+                 KEYBOARD HINT
+            ================================== -->
+
+            <div class="keyboard-hint">
+
+                ✦
+
+                <span>
+                    Whisper a calculation...
+                </span>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer>
+
+        <span>✦</span>
+
+        Made with magic &amp; a little wisp
+
+        <span>👻</span>
+
+    </footer>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
